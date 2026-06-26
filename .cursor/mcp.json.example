@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "eaco": {
+      "command": "npx",
+      "args": ["-y", "@virtualsnake9/eaco-mcp"],
+      "env": {
+        "EACO_API_BASE_URL": "http://localhost:3004"
+      }
+    }
+  }
+}

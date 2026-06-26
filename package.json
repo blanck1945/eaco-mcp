@@ -1,0 +1,28 @@
+{
+  "name": "@virtualsnake9/eaco-mcp",
+  "version": "0.1.0",
+  "description": "Servidor MCP (stdio) para Éaco — solicitudes y aprobaciones de acceso",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": { "eaco-mcp": "dist/index.js" },
+  "files": ["dist", "README.md", "AGENTS.md"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blanck1945/eaco-mcp.git"
+  }
+}
